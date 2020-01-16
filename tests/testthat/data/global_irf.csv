@@ -1,0 +1,16 @@
+year,value,agent,units,name
+1,0.367879441,CH4,degC/Tg,global
+2,0.135335283,CH4,degC/Tg,global
+3,0.049787068,CH4,degC/Tg,global
+4,0.018315639,CH4,degC/Tg,global
+5,0.006737947,CH4,degC/Tg,global
+1,0.1,BC,degC/Tg,global
+2,0.01,BC,degC/Tg,global
+3,0.001,BC,degC/Tg,global
+4,0.0001,BC,degC/Tg,global
+5,0.00001,BC,degC/Tg,global
+1,0.04,CO2,degC/Tg,global
+2,0.0016,CO2,degC/Tg,global
+3,0.000064,CO2,degC/Tg,global
+4,0.00000256,CO2,degC/Tg,global
+5,1.02E-07,CO2,degC/Tg,global

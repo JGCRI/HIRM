@@ -4,8 +4,7 @@
 ## set to the SLCFimpulse/data-raw/
 
 # 0. Set Up ------------------------------------------------------------------------------------------
-#library(hector)
-
+#devtools::load_all('~/Documents/hector')
 library(dplyr)
 library(tidyr)
 library(assertthat)

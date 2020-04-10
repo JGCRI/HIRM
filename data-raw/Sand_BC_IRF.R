@@ -3,10 +3,10 @@
 
 # 0. Set Up --------------------------------------------------------------------------
 # Load the required pacakges
-#library(hector)
+library(hector)
 library(dplyr)
-library(readxl)
-library(tidyr)
+library(readODS)
+libra(tidyr)
 
 # The base direcotry should be set to the working direcotry.
 BASE_DIR <- here::here('data-raw')
@@ -14,8 +14,8 @@ BASE_DIR <- here::here('data-raw')
 # 1. Import & Format Data -------------------------------------------------------------
 # Import the csv file from Sand et al that was sent to Setve Smith. This contains the
 # monthly temperature response to a global BC step increase.
-path_csv <- file.path(BASE_DIR, 'TREFHT_fig1_toSteveSmith.xlsx')
-raw_data <- read_excel(path_csv)
+path_ods <- file.path(BASE_DIR, 'TREFHT_fig1_toSteveSmith.ods')
+raw_data <- read_ods(path_ods)
 
 # Determine how many years of data of monthly data we have. This will be used to add
 # years to the temperature response data frame.

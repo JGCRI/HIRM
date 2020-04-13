@@ -1,4 +1,4 @@
 library("testthat")
 
-testthat::test_check("SLCFimpulse")
+testthat::test_check("HIRM")
 

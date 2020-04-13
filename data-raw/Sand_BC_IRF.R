@@ -1,5 +1,4 @@
 ## The purpose of this script is to derive the CESM BC IRF that can be used in HIRM.
-## The working driectory should be set to the SLCFimpulse/data-raw
 
 # 0. Set Up --------------------------------------------------------------------------
 # Load the required pacakges
@@ -89,14 +88,14 @@ Sand_BC_IRF %>%
   pull(value) ->
   Sand_init_response
 
-SLCFimpulse::Hector_IRF$general_hector %>%
+HIRM::Hector_IRF$general_hector %>%
   filter(year == 0) %>%
   pull(value) ->
   Hector_init_response
 
 scalar <-  Sand_init_response / Hector_init_response
 
-SLCFimpulse::Hector_IRF$general_hector %>%
+HIRM::Hector_IRF$general_hector %>%
   mutate(name = 'BC modified Hector',
          value = value * scalar) ->
   Hector_BC_IRF

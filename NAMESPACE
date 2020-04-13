@@ -3,5 +3,6 @@
 export(batch_IRM)
 export(core_IRM)
 export(uncertainty_IRM)
+importFrom(assertthat,assert_that)
 importFrom(dplyr,"%>%")
 importFrom(foreach,"%do%")

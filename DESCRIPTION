@@ -19,8 +19,7 @@ Imports:
     tibble,
     tidyr
 Suggests:
-    testthat,
-    SLCFimpulse
+    testthat
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

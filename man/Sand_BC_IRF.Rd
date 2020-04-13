@@ -4,7 +4,14 @@
 \name{Sand_BC_IRF}
 \alias{Sand_BC_IRF}
 \title{Sand_BC_IRF}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 3001 rows and 5 columns.}
+\format{A data frame containing:
+\describe{
+\item{name}{The name of the impulse response function; should match the name of the element in the list}
+\item{year}{Year since the emissions impulse}
+\item{value}{The impulse response function value}
+\item{units}{A string of units for the impulse response function (degC * m2 / W)}
+\item{agent}{The name of the agent being pulsed}
+}}
 \usage{
 Sand_BC_IRF
 }
@@ -12,7 +19,8 @@ Sand_BC_IRF
 This is a dataframe of the BC IRF derived from the temperature response to a BC step test from Sand et al.
 }
 \seealso{
-Other IRF inputs: \code{\link{Hector_IRF}}
+Other IRF inputs: 
+\code{\link{Hector_IRF}}
 }
 \concept{IRF inputs}
 \keyword{datasets}

@@ -3,7 +3,6 @@
 \docType{package}
 \name{HIRM}
 \alias{HIRM}
-\alias{HIRM-package}
 \title{HIRM: A hybrid impulse response model}
 \description{
 HIRM: A hybrid impulse response model

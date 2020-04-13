@@ -7,7 +7,7 @@
 \format{A list of a data frame containing the RF driver time series.
 \describe{
 \item{scenario}{The name of the Hector core the output came from.}
-\item{year}{Absolut year.}
+\item{year}{Absolute year.}
 \item{variable}{The name of the value, a type of RF.}
 \item{value}{The RF value.}
 \item{units}{The units for the RF value.}

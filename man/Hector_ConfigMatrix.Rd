@@ -16,8 +16,8 @@ Hector_ConfigMatrix
 This is an empty input configuration matrix for Hector.
 }
 \section{Notes}{
- The core HRIM configuraiton matrix is set up with RF drivers as rows and IRF as columns.
-Right now the matix is empty, it only contains the value 0. When values in the matrix are set to 1 then
+ The core HRIM configuration matrix is set up with RF drivers as rows and IRF as columns.
+Right now the matix is empty, and only contains the value 0. When values in the matrix are set to 1 then
 the RF driver and the IRF paring corresponding to the value will be used in HIRM.
 }
 

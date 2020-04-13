@@ -1,12 +1,26 @@
 Package: HIRM
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A Hybrid Impulse Response Model for Hector
 Version: 1.0.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Depends: R (>= 3.5.0)
+Authors@R: c(person("Kalyn", "Dorheim", 
+    email = "kalyn.dorheim@pnnl.gov", 
+    role = c("cre", "aut"), 
+    comment = c(ORCID = "0000-0001-8093-8397")),
+  person("Ben", "Bond-Lamberty", role = "ctb", comment = c(ORCID = "0000-0001-9525-4633")),
+  person("Steve", "Smith", role = "ctb"),
+  person("Pacific Northwest National Laboratory", role = "cph"))
+Maintainer: Kalyn Dorheim <kalyn.dorheim@pnnl.gov>
+Description: A hybrid impulse response model for climate modeling and uncertainty analyses.
+Imports:
+    assertthat,
+    dplyr (>= 0.8),
+    foreach,
+    tibble,
+    tidyr
+Suggests:
+    testthat
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1 
+RoxygenNote: 7.0.2

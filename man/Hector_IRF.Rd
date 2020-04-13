@@ -4,7 +4,14 @@
 \name{Hector_IRF}
 \alias{Hector_IRF}
 \title{Hector_IRF}
-\format{An object of class \code{list} of length 1.}
+\format{A list of a data frame containing the impulse response functions.
+\describe{
+\item{name}{The name of the impulse response function; should match the name of the element in the list}
+\item{year}{Year since the emissions impulse}
+\item{value}{The impulse response function value}
+\item{units}{A string of units for the impulse response function (degC * m2 / W)}
+\item{agent}{The name of the agent being pulsed}
+}}
 \usage{
 Hector_IRF
 }
@@ -13,7 +20,8 @@ This is a list of the Hector impulse response functions.
 Each element in the list should match the impulse response function.
 }
 \seealso{
-Other IRF inputs: \code{\link{Sand_BC_IRF}}
+Other IRF inputs: 
+\code{\link{Sand_BC_IRF}}
 }
 \concept{IRF inputs}
 \keyword{datasets}

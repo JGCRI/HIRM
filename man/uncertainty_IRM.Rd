@@ -4,8 +4,15 @@
 \alias{uncertainty_IRM}
 \title{Uncertainty wrapper for the core_IRM}
 \usage{
-uncertainty_IRM(uncertianty_scalers, config_matrix, rf_list, irf_list,
-  match_agents = FALSE, write_out = NULL, n_core = 1)
+uncertainty_IRM(
+  uncertianty_scalers,
+  config_matrix,
+  rf_list,
+  irf_list,
+  match_agents = FALSE,
+  write_out = NULL,
+  n_core = 1
+)
 }
 \arguments{
 \item{uncertianty_scalers}{a list of vectors containing uncertainty scalers for a specifc RF time series or IRF. The core_IRM will be run with all possible combinations of the uncertainty scalers.}

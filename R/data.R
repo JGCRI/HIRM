@@ -30,6 +30,23 @@
 #' @family IRF inputs
 'Sand_BC_IRF'
 
+#' Hector_BC_IRF
+#'
+#' This is a data frame of a modified version of Hector's general IRF. The magnitude of the IRF was derived
+#' from the Sand et al. BC IRF. So that the temporal evolution of this IRF matches Hector's general IRF while
+#' the magnitude of the IRF reflects the BC species, specifically.
+#'
+#' @format A data frame containing:
+#' \describe{
+#' \item{name}{The name of the impulse response function}
+#' \item{year}{Year since the emissions impulse}
+#' \item{value}{The impulse response function value}
+#' \item{units}{A string of units for the impulse response function (degC * m2 / W)}
+#' \item{agent}{The name of the agent being pulsed}
+#' }
+#' @family IRF inputs
+'Hector_BC_IRF'
+
 
 #' Hector_RF
 #'

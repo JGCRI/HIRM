@@ -21,6 +21,7 @@ Each element in the list should match the impulse response function.
 }
 \seealso{
 Other IRF inputs: 
+\code{\link{Hector_BC_IRF}},
 \code{\link{Sand_BC_IRF}}
 }
 \concept{IRF inputs}

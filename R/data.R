@@ -5,11 +5,11 @@
 #'
 #' @format A list of a data frame containing the impulse response functions.
 #' \describe{
-#' \item{name}{The name of the impulse response function, it shoudld match the name of the element in the list}
+#' \item{name}{The name of the impulse response function; should match the name of the element in the list}
 #' \item{year}{Year since the emissions impulse}
 #' \item{value}{The impulse response function value}
 #' \item{units}{A string of units for the impulse response function (degC * m2 / W)}
-#' \item{agent}{The name of the agent being pulsed
+#' \item{agent}{The name of the agent being pulsed}
 #' }
 #' @family IRF inputs
 'Hector_IRF'
@@ -21,14 +21,31 @@
 #'
 #' @format A data frame containing:
 #' \describe{
-#' \item{name}{The name of the impulse response function, it shoudld match the name of the element in the list}
+#' \item{name}{The name of the impulse response function; should match the name of the element in the list}
 #' \item{year}{Year since the emissions impulse}
 #' \item{value}{The impulse response function value}
 #' \item{units}{A string of units for the impulse response function (degC * m2 / W)}
-#' \item{agent}{The name of the agent being pulsed
+#' \item{agent}{The name of the agent being pulsed}
 #' }
 #' @family IRF inputs
 'Sand_BC_IRF'
+
+#' Hector_BC_IRF
+#'
+#' This is a data frame of a modified version of Hector's general IRF. The magnitude of the IRF was derived
+#' from the Sand et al. BC IRF. So that the temporal evolution of this IRF matches Hector's general IRF while
+#' the magnitude of the IRF reflects the BC species, specifically.
+#'
+#' @format A data frame containing:
+#' \describe{
+#' \item{name}{The name of the impulse response function}
+#' \item{year}{Year since the emissions impulse}
+#' \item{value}{The impulse response function value}
+#' \item{units}{A string of units for the impulse response function (degC * m2 / W)}
+#' \item{agent}{The name of the agent being pulsed}
+#' }
+#' @family IRF inputs
+'Hector_BC_IRF'
 
 
 #' Hector_RF
@@ -38,7 +55,7 @@
 #' @format A list of a data frame containing the RF driver time series.
 #' \describe{
 #' \item{scenario}{The name of the Hector core the output came from.}
-#' \item{year}{Absolut year.}
+#' \item{year}{Absolute year.}
 #' \item{variable}{The name of the value, a type of RF.}
 #' \item{value}{The RF value.}
 #' \item{units}{The units for the RF value.}
@@ -68,8 +85,8 @@
 #'
 #' This is an empty input configuration matrix for Hector.
 #'
-#' @section Notes: The core HRIM configuraiton matrix is set up with RF drivers as rows and IRF as columns.
-#' Right now the matix is empty, it only contains the value 0. When values in the matrix are set to 1 then
+#' @section Notes: The core HRIM configuration matrix is set up with RF drivers as rows and IRF as columns.
+#' Right now the matix is empty, and only contains the value 0. When values in the matrix are set to 1 then
 #' the RF driver and the IRF paring corresponding to the value will be used in HIRM.
 #'
 #' @format A matrix with named rows and columns.
@@ -79,6 +96,3 @@
 #' }
 #' @family Configuration matrices
 'Hector_ConfigMatrix'
-
-
-

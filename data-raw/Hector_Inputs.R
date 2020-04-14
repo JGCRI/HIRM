@@ -1,10 +1,8 @@
-
 ##  Run Hector and calculate the RF timeseries that will be used in the HIRM validation experiments.
-##  Also save the comparison temperature. The working directory for this script should be
-## set to the SLCFimpulse/data-raw/
+##  Also save the comparison temperature.
 
 # 0. Set Up ------------------------------------------------------------------------------------------
-#devtools::load_all('~/Documents/hector')
+library(hector)
 library(dplyr)
 library(tidyr)
 library(assertthat)

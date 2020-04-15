@@ -4,7 +4,7 @@
 \alias{core_IRM}
 \title{IRM}
 \usage{
-core_IRM(config_matrix, rf_list, irf_list, match_agents)
+core_IRM(config_matrix, rf_list, irf_list, match_agents = FALSE)
 }
 \arguments{
 \item{config_matrix}{a matrix containing boolean indicators that refers to a specific RF time series and IRF to use as inputs in the contributing_temp function}
@@ -13,7 +13,7 @@ core_IRM(config_matrix, rf_list, irf_list, match_agents)
 
 \item{irf_list}{a list of the IRF}
 
-\item{match_agents}{a logial value indicating whether the rf agent must match the irf, default set to FALSE}
+\item{match_agents}{default is set to FALSE, a logial value indicating whether the rf agent must match the irf, default set to FALSE}
 }
 \value{
 a list of three tibbles, one of the total temp, one of the total RF, and one containting the contibuting temp from each RF agent

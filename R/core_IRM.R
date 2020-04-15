@@ -60,13 +60,13 @@
 #' @param config_matrix a matrix containing boolean indicators that refers to a specific RF time series and IRF to use as inputs in the contributing_temp function
 #' @param rf_list a list of the RF time series
 #' @param irf_list a list of the IRF
-#' @param match_agents a logial value indicating whether the rf agent must match the irf, default set to FALSE
+#' @param match_agents default is set to FALSE, a logial value indicating whether the rf agent must match the irf, default set to FALSE
 #' @importFrom dplyr %>%
 #' @return a list of three tibbles, one of the total temp, one of the total RF, and one containting the contibuting temp from each RF agent
 #' @export
 
 
-  core_IRM <- function(config_matrix, rf_list, irf_list, match_agents){
+  core_IRM <- function(config_matrix, rf_list, irf_list, match_agents = FALSE){
 
   # Silence package checks
   value <- year <- NULL

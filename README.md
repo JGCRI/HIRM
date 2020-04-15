@@ -9,8 +9,4 @@ This is the repository for the hybrid impulse response model **HIRM**. HIRM leve
 
 While the code is documented with [Doxygen](http://doxygen.org)-style comments. The primary link to HIRM model documation is the [online manual](TODO) and a formal documenation paper in progress (Dorherim et al. submitted to Earth Space Science). Please refer to package vignettes for examples of using HIRM. 
 
-Package Vignettes
-
-* [HIRM basics](TODO)
-
 

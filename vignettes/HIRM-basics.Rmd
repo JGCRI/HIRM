@@ -7,11 +7,11 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-This vignette provides a basic introduction for running HIRM. Here we will show how to use HIRM with its built-in inputs derived from [Hector](https://github.com/jgcri/hector). Although HIRM could be set up use inputs from any process-based model. 
+This vignette provides a basic introduction for running HIRM. Here we will show how to use HIRM with its built-in inputs derived from [Hector](https://github.com/jgcri/hector). HIRM could however be set up use inputs from any process-based model. 
 
 ### RCP 4.5 Run
 
-First, load the `hirm` package and other helpful pacakges. 
+First, load the `hirm` package and other helpful packages. 
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -51,8 +51,7 @@ Get an idea of what the configuration matrix looks like.
 head(config_matrix) 
 ```
 
-Now all of the HIRM inputs are loaded modify the configuration matrix to set HIRM up for a specific run. For this example let's set HIRM  up to run the **rcp45** scenario. 
-
+Now all of the HIRM inputs are loaded modify the configuration matrix to set HIRM up for a specific run. For this example let's set HIRM up to run the **rcp45** scenario. 
 
 ```{r}
 # Figure out which RF pathways have a pattern that matches our scenario name. 
@@ -71,8 +70,7 @@ rslt <- core_IRM(config_matrix = config_matrix,
                  irf_list = irf_input) 
 ```
 
-
-Plot the tempearture results. 
+Plot the temperature results. 
 
 ```{r, fig.width=8, fig.height=6}
 ggplot(data = rslt$total_temp) + 
@@ -82,14 +80,13 @@ ggplot(data = rslt$total_temp) +
 
 ```
 
-Plot the tempearture contribution of each radiative forcing agent. 
+Plot the temperature contribution of each radiative forcing agent. 
 
 ```{r, fig.width=8, fig.height=6}
 ggplot(data = rslt$temp_contributions) + 
   geom_line(aes(year, value, color = RF_agent)) + 
   theme_bw() + 
-  labs(title = "HIRM RCP 4.5 RF Agent Tempearture Contributions", 
+  labs(title = "HIRM RCP 4.5 RF Agent Temperarure Contributions", 
        y = expression(degree~'C'), x = 'Year') 
 
 ```
-

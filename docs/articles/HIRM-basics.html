@@ -82,11 +82,11 @@
 
     
     
-<p>This vignette provides a basic introduction for running HIRM. Here we will show how to use HIRM with its built-in inputs derived from <a href="https://github.com/jgcri/hector">Hector</a>. Although HIRM could be set up use inputs from any process-based model.</p>
+<p>This vignette provides a basic introduction for running HIRM. Here we will show how to use HIRM with its built-in inputs derived from <a href="https://github.com/jgcri/hector">Hector</a>. HIRM could however be set up use inputs from any process-based model.</p>
 <div id="rcp-4-5-run" class="section level3">
 <h3 class="hasAnchor">
 <a href="#rcp-4-5-run" class="anchor"></a>RCP 4.5 Run</h3>
-<p>First, load the <code>hirm</code> package and other helpful pacakges.</p>
+<p>First, load the <code>hirm</code> package and other helpful packages.</p>
 <div class="sourceCode"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">HIRM</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)  <span class="co"># For plotting</span></pre></body></html></div>
 <p>Then load the built-in HIRM inputs.</p>
@@ -117,17 +117,17 @@
 <div class="sourceCode"><html><body><pre class="r"><span class="no">rslt</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/core_IRM.html">core_IRM</a></span>(<span class="kw">config_matrix</span> <span class="kw">=</span> <span class="no">config_matrix</span>,
                  <span class="kw">rf_list</span> <span class="kw">=</span> <span class="no">rf_inputs</span>,
                  <span class="kw">irf_list</span> <span class="kw">=</span> <span class="no">irf_input</span>)</pre></body></html></div>
-<p>Plot the tempearture results.</p>
+<p>Plot the temperature results.</p>
 <div class="sourceCode"><html><body><pre class="r"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">rslt</span>$<span class="no">total_temp</span>) +
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="no">year</span>, <span class="no">value</span>)) +
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>() +
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span>(<span class="kw">title</span> <span class="kw">=</span> <span class="st">"HIRM RCP 4.5 Global Mean Temp"</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html">expression</a></span>(<span class="no">degree</span>~<span class="st">'C'</span>), <span class="kw">x</span> <span class="kw">=</span> <span class="st">'Year'</span>)</pre></body></html></div>
 <p><img src="HIRM-basics_files/figure-html/unnamed-chunk-8-1.png" width="768"></p>
-<p>Plot the tempearture contribution of each radiative forcing agent.</p>
+<p>Plot the temperature contribution of each radiative forcing agent.</p>
 <div class="sourceCode"><html><body><pre class="r"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">rslt</span>$<span class="no">temp_contributions</span>) +
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="no">year</span>, <span class="no">value</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">RF_agent</span>)) +
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>() +
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span>(<span class="kw">title</span> <span class="kw">=</span> <span class="st">"HIRM RCP 4.5 RF Agent Tempearture Contributions"</span>,
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span>(<span class="kw">title</span> <span class="kw">=</span> <span class="st">"HIRM RCP 4.5 RF Agent Temperarure Contributions"</span>,
        <span class="kw">y</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html">expression</a></span>(<span class="no">degree</span>~<span class="st">'C'</span>), <span class="kw">x</span> <span class="kw">=</span> <span class="st">'Year'</span>)</pre></body></html></div>
 <p><img src="HIRM-basics_files/figure-html/unnamed-chunk-9-1.png" width="768"></p>
 </div>

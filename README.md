@@ -7,6 +7,6 @@ This is the repository for the hybrid impulse response model **HIRM**. HIRM leve
 
 ![Conceptual Diagram of HIRM](https://user-images.githubusercontent.com/27299759/79276039-48732300-7e75-11ea-8424-cdb8dd4db1a7.png)
 
-While the code is documented with [Doxygen](http://doxygen.org)-style comments. The primary link to HIRM model documation is the [online manual](https://jgcri.github.io/HIRM/index.html) and a formal documenation paper in progress (Dorherim et al. submitted to Earth Space Science). Please refer to package vignettes for examples of using HIRM. 
+While the code is documented with [Doxygen](http://doxygen.org)-style comments. The primary link to HIRM model documation is the [online manual](https://jgcri.github.io/HIRM/) and a formal documenation paper in progress (Dorherim et al. submitted to Earth Space Science). Please refer to package vignettes for examples of using HIRM. 
 
 
